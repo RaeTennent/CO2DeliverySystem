@@ -13,7 +13,6 @@ MESSAGE = ""
 sleep_ms = 0
 sampleRate = 60000 #milli-seconds
 separator = " | "
-print("yello")
 
 while True:
     temp = bme.temperature
