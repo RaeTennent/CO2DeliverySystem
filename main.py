@@ -22,8 +22,6 @@ while True:
     # Wait for sensor data to be ready to read (by default every 2 seconds)
     while scd30.get_status_ready() != 1:
         time.sleep_ms(200)
-    #m = scd30.read_measurement()
-    #print(m)
     co2 = scd30.CO2
     MESSAGE = str(temp) + separator + str(hum) + separator + str(presh) + separator + str(co2)
     print(MESSAGE)
